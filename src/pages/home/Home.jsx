@@ -1,9 +1,11 @@
 import React from "react";
+import Header from "../../components/header/Header";
 import "./home.css";
 
 function Home() {
   return (
     <>
+    <Header />
       <div className="main">
         <ul>
           <li>Reserve</li>

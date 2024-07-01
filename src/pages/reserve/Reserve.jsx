@@ -1,14 +1,23 @@
 import React from "react";
-import "./home.css";
+import Header from "../../components/header/Header";
+import SearchBar from "../../components/searchbar/SearchBar";
+import ReserveCard from "../../components/reserve-card/ReserveCard";
+import "./reserve.css";
 
 function Reserve() {
   return (
     <>
+    <Header />
+    <SearchBar />
+    <ReserveCard />
+    {/* <div className="vanilla">
     <h4>Non-DLC</h4>
     <ul>
       <li>Layton lakes</li>
       <li>Hershfeldon</li>
     </ul>
+    </div>
+    <div className="dlc">
     <h4>DLC</h4>
     <ul>
       <li>Medved-Taiga National Park</li>
@@ -25,6 +34,9 @@ function Reserve() {
       <li>Emerald Coast</li>
       <li>Sundarpatan</li>
     </ul>
+    </div> */}
     </>
   )
 }
+
+export default Reserve;

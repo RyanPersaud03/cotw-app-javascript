@@ -1,0 +1,54 @@
+.reserve-card {
+  background-color: antiquewhite;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card effect */
+  padding: 20px; /* Padding inside the card */
+  margin: 20px; /* Space around the card */
+  max-width: 100%; /* Maximum width of the card */
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.reserve-card:hover {
+  transform: translateY(-5px); /* Lift the card slightly on hover */
+}
+
+.reserve-card h4 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.5em; /* Font size for the title */
+  color: #333; /* Title color */
+  text-align: start; /* Center the title text */
+  margin-bottom: 15px; /* Space below the title */
+}
+
+.tag {
+  background-color: rgb(240, 240, 171);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.reserve-card {
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 990px 300px;
+}
+
+.item {
+  background-color: red;
+}
+.reserve-name {
+  background-color: rgb(152, 240, 144);
+}
+.reserve-img {
+  background-color: rgb(240, 144, 144);
+}
+.tag-div {
+  background-color: rgb(240, 202, 144);
+}
+.map-icon {
+  background-color: rgb(144, 166, 240);
+}
