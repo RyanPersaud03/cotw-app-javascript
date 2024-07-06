@@ -11,7 +11,7 @@
 .search-container {
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: rgb(249, 250, 215);
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -29,12 +29,12 @@
 .search-button {
   border: none;
   padding: 10px;
-  background-color: #007BFF;
+  background-color: #b6f0be;
   color: white;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
 
 .search-button:hover {
-  background-color: #0056b3;
+  background-color: #9de088;
 }

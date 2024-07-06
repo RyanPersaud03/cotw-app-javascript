@@ -1,17 +1,17 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import SearchBar from "../../components/searchbar/SearchBar";
-import ReserveCard from "../../components/reserve-card/ReserveCard";
-import "./reserve.css";
+import WildCard from "../../components/wildlife-card/WildCard";
+import "./wildlife.css"
 
-function Reserve() {
+function Wildlife() {
   return (
     <>
     <Header />
     <SearchBar />
-    <ReserveCard />
+    <WildCard />
     </>
   )
 }
 
-export default Reserve;
+export default Wildlife;

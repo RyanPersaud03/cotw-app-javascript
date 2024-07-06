@@ -1,0 +1,90 @@
+.animal-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Ensure container takes full width */
+}
+
+.animal-card {
+  background-color: antiquewhite;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 0; /* Reduced margin for stacking effect */
+  width: calc(100% - 40px); /* Full width with padding adjustment */
+  max-width: 800px; /* Optional: Max width for better readability */
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: grid;
+  grid-template-areas: 
+    "name image"
+    "class diamond"
+    "difficulty dlc";
+  grid-template-columns: 2fr 1fr; /* Adjusted columns for wider layout */
+  gap: 10px;
+}
+
+.animal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.animal-name {
+  background-color: rgb(152, 240, 144);
+  font-weight: bold;
+  font-size: 1.2em;
+  grid-area: name;
+  text-align: left; /* Align text to the left */
+  padding: 5px 10px; /* Adjusted padding */
+  line-height: 1.2; /* Adjusted line height */
+  height: auto; /* Ensure the height adjusts based on content */
+  min-height: 40px; /* Set a minimum height */
+ /* max-height: 80px; */ /*Set a minimum height */
+}
+
+.animal-img img {
+  width: 100%;
+  border-radius: 5px;
+  grid-area: image;
+}
+
+.classlvl {
+  background-color: rgb(240, 240, 171);
+  grid-area: class;
+  font-weight: bold;
+  justify-content: flex-start; /* Align text to the left */
+}
+
+.maxDiff {
+  background-color: rgb(144, 166, 240);
+  grid-area: difficulty;
+  font-weight: bold;
+  justify-content: flex-start; /* Align text to the left */
+}
+
+.diamond {
+  background-color: rgb(171, 207, 240);
+  grid-area: diamond;
+  font-weight: bold;
+  justify-content: flex-start; /* Align text to the left */
+}
+
+.tag-dlc {
+  background-color: rgb(240, 202, 144);
+  font-weight: bold;
+  justify-content: flex-start; /* Align text to the left */
+}
+
+.great-one {
+  background-color: rgb(171, 207, 240);
+  font-weight: bold;
+  justify-content: flex-start; /* Align text to the left */
+}

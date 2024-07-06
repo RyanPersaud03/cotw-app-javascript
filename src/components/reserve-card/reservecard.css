@@ -1,54 +1,77 @@
+.reserve-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the cards horizontally */
+  padding: 20px;
+  gap: 20px; /* Space between cards */
+}
+
 .reserve-card {
-  background-color: antiquewhite;
+  background-color: #d4be8f;
   border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card effect */
   padding: 20px; /* Padding inside the card */
-  margin: 20px; /* Space around the card */
-  max-width: 100%; /* Maximum width of the card */
-  transition: transform 0.2s; /* Smooth transition for hover effect */
+  width: 100%; /* Full width of the container */
+  max-width: 500px; /* Limit the maximum width of the card */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
 }
 
 .reserve-card:hover {
   transform: translateY(-5px); /* Lift the card slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
-.reserve-card h4 {
-  margin: 0; /* Remove default margin */
+.reserve-card .item {
+  margin: 10px 0; /* Space between items */
+  width: 100%;
+}
+
+.reserve-name {
   font-size: 1.5em; /* Font size for the title */
   color: #333; /* Title color */
-  text-align: start; /* Center the title text */
-  margin-bottom: 15px; /* Space below the title */
 }
 
-.tag {
-  background-color: rgb(240, 240, 171);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 85px;
-  height: 40px;
-  font-size: 15px;
-  border-radius: 5px;
+.reserve-img img {
+  max-width: 100%;
+  border-radius: 4px; /* Slightly rounded corners for images */
 }
 
-.reserve-card {
-  display: grid;
-  grid-template-rows: 100px;
-  grid-template-columns: 990px 300px;
-}
-
-.item {
-  background-color: red;
-}
-.reserve-name {
-  background-color: rgb(152, 240, 144);
-}
-.reserve-img {
-  background-color: rgb(240, 144, 144);
-}
 .tag-div {
-  background-color: rgb(240, 202, 144);
+  background-color: #e0fae2; /* Light cyan background for the tag */
+  color: #00796b; /* Dark cyan text for the tag */
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px; /* Pill shape for the tag */
+  font-size: 0.9em;
+  margin: 10px auto; /* Center the tag */
+  cursor: pointer;
 }
+.tag-div:hover {
+  background-color: #ecf8ed; /* Light cyan background for the tag */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+.tag-dlc {
+  background-color: #f8a73d; /* Light cyan background for the tag */
+  color: #434645; /* Dark cyan text for the tag */
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px; /* Pill shape for the tag */
+  font-size: 0.9em;
+  margin: 10px auto; /* Center the tag */
+}
+
 .map-icon {
-  background-color: rgb(144, 166, 240);
+  font-size: 1.5em; /* Larger icon size */
+  color: #0288d1; /* Blue color for the map icon */
+  cursor: pointer;
+}
+.map-icon:hover {
+  color: #0288d1; /* Blue color for the map icon */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  cursor: pointer;
 }
